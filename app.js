@@ -47,7 +47,7 @@ class App {
         }
         for(const e in obj){
             console.log(e);
-            console.log(questions[0].correctAnswer);
+            console.log(questions[0]);
             // if(e==questions.correctAnswer){
             //     console.log(e);
             //     score+=1;
