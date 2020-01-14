@@ -1,6 +1,6 @@
 const questions = [
     {
-      id: 1,
+      id: 0,
       q: 'Javascript is _________ language.',
       answers: {
         a: 'Programming',
@@ -12,7 +12,7 @@ const questions = [
       correctAnswer: 'abc'
     },
     {
-      id:2,
+      id:1,
       q:
         'Which of the following is a valid type of function javascript supports?',
       answers: {
@@ -25,7 +25,7 @@ const questions = [
       correctAnswer: 'c'
     },
     {
-      id:3,
+      id:2,
       q:
         'Which built-in method returns the index within the calling String object of the first occurrence of the specified value?',
       answers: {
@@ -38,7 +38,7 @@ const questions = [
       correctAnswer: 'c'
     },
     {
-      id:4,
+      id:3,
       q: 'Which one of the following is valid data type of JavaScript',
       answers: {
         a: 'number',

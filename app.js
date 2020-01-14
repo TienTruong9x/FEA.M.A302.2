@@ -33,30 +33,37 @@ class App {
     }
     submit() {
         const answers = document.querySelectorAll('input:checked');
-        let score = 0;
+        var score = 0;
         const obj = {};
 
         for (let i = 0; i < answers.length; i++) {
+            console.log(answers[i].name);
             const id = parseInt(answers[i].name);
-            if (obj[id] === undefined) {
+            if (obj[id] == undefined) {
                 obj[id] = answers[i].value;
             } else {
                 obj[id] += answers[i].value;    
             }
 
         }
-        for(const e in obj){
-            console.log(e);
-            console.log(questions[0]);
-            // if(e==questions.correctAnswer){
-            //     console.log(e);
-            //     score+=1;
-            // }
+
+        for(let i=0;i<questions.length;i++){
+            if(obj[i]!=undefined){
+                if(obj[i]==questions[i].correctAnswer){
+                    score+=1;
+                }
+            }
+            
         }
-        console.log(score);
+            
+            // if(Object.keys(obj)==e['correctAnswer']){
+            //     console.log(Object.keys(obj));
+            //     console.log(e['correctAnswer']);
+            // }
+        document.querySelector('#point').innerHTML=score+" Out of "+ questions.length;
     }
     test() {
-       
+      
     }
 
 }
